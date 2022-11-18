@@ -1,21 +1,11 @@
-# FFT
+# Elixir FFT
 
-**TODO: Add description**
+I wanted to understand Fast Fourier Transforms (FFT) a bit better and write it in Elixir, so here we are. This is obviously a bit of a toy version, but still pretty fun to put together. This is not a particularly spectacular implementation, but it is one.
 
-## Installation
+Huge shoutout to [Reducible](https://www.youtube.com/watch?v=h7apO7q16V0), [Veritasium](https://www.youtube.com/watch?v=nmgFG7PUHfo), and [3B1B](https://www.youtube.com/watch?v=spUNpyF58BY) for the great videos on the topic. Definitely recommended viewing if you're interested and want to learn more.
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `fft` to your list of dependencies in `mix.exs`:
+This implementation is derived heavily from Reducible's pseudocode, as well as the very helpful competitive programming oriented writeup with a C++ implementation [here](https://cp-algorithms.com/algebra/fft.html).
 
-```elixir
-def deps do
-  [
-    {:fft, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/fft>.
+## Why FFT?
+FFT is a highly influential algorithm used broadly in signal processing and compression. It is a critical algorithm for the functioning of our modern world, and for that reason I felt (just a bit) ashamed that I didn't understand it all that well. I still don't, but hey, at least it's a bit less not that well now. This really is a genius algorithm that should be appreciated by all.
 
