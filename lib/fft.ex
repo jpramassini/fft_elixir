@@ -1,23 +1,23 @@
 defmodule FFT do
   @moduledoc """
   Documentation for `FFT`.
+
+  There's some significant opportunity for cleanup here, but for now I just wanted to get something that worked together in a few hours. Getting around
+  not having nice mutable array stuff was a bit of a pain, as you can see with `generate_y_arr`. Would love to come up with a better way to do that.
+
+  TODO: Figure out how to make this do non-powers of two? This will probably require digging a
   """
   use Complex.Kernel
 
   @i Complex.new(0, 1)
 
   @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> FFT.hello()
-      :world
-
+  Pass this function an array of polynomial coefficients to FFT. It will print the FFT'd and re-inverted versions of them.
+  Make sure the array is a power of 2 in length! Bad things will happen otherwise!
   """
-  def hello() do
-    IO.inspect(fft([1, 0, 1, 0, 1, 0, 1, 0]), label: "FFT")
-    IO.inspect(fft([1, 0, 1, 0, 1, 0, 1, 0]) |> ifft(true), label: "INVERTED")
+  def eval_fft(coeff_array) do
+    IO.inspect(fft(coeff_array), label: "FFT")
+    IO.inspect(fft(coeff_array) |> ifft(true), label: "INVERTED")
   end
 
   def principal_nth_root_of_unity(n) do
