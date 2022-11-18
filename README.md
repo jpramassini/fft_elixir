@@ -7,5 +7,5 @@ Huge shoutout to [Reducible](https://www.youtube.com/watch?v=h7apO7q16V0), [Veri
 This implementation is derived heavily from Reducible's pseudocode, as well as the very helpful competitive programming oriented writeup with a C++ implementation [here](https://cp-algorithms.com/algebra/fft.html).
 
 ## Why FFT?
-FFT is a highly influential algorithm used broadly in signal processing and compression. It is a critical algorithm for the functioning of our modern world, and for that reason I felt (just a bit) ashamed that I didn't understand it all that well. I still don't, but hey, at least it's a bit less not that well now. This really is a genius algorithm that should be appreciated by all.
+FFT is a highly influential algorithm used in signal processing, compression, and mathematics. It is a very useful algorithm with lots of applications in our modern world, and for that reason I felt (just a bit) ashamed that I didn't understand it all that well. I still don't, but hey, at least it's a bit less not that well now. This really is a genius algorithm that should be appreciated by all.
 
